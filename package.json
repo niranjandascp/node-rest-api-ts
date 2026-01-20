@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sanashaju/node-rest-api-ts.git"
+    "url": "git+https://github.com/niranjandascp/node-rest-api-ts.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sanashaju/node-rest-api-ts/issues"
+    "url": "https://github.com/niranjandascp/node-rest-api-ts/issues"
   },
-  "homepage": "https://github.com/sanashaju/node-rest-api-ts#readme",
+  "homepage": "https://github.com/niranjandascp/node-rest-api-ts#readme",
   "dependencies": {
     "argon2": "^0.44.0",
     "compression": "^1.8.1",
