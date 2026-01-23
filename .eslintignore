@@ -4,3 +4,4 @@ uploads
 .env
 dist
 build
+coverage

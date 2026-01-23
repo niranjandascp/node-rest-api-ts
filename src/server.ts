@@ -6,10 +6,11 @@ import helmet from 'helmet';
 import compression from 'compression';
 import connectDB from './config/db.js';
 import authRoutes from './routes/authRoutes.js';
-// import { authLimiter } from './middleware/rateLimiter.middleware.js';
+import { authLimiter } from './middleware/rateLimiter.middleware.js';
 import userRoutes from './routes/userRoutes.js';
-// import productRoutes from './routes/productRoutes.js';
-// import studentRoutes from './routes/studentRoutes.js';
+import productRoutes from './routes/productRoutes.js';
+import studentRoutes from './routes/studentRoutes.js';
+import { errorHandler } from './middleware/error.middleware.js';
 
 dotenv.config();
 
@@ -39,8 +40,13 @@ app.use('/api/auth', authRoutes);
 
 app.use('/api/users', userRoutes);
 
-// app.use('/api/products', productRoutes);
-// app.use('/api/students', studentRoutes);
+app.use('/api/products', productRoutes);
+
+app.use('/api/students', studentRoutes);
+
+// Error handling middleware
+app.use(errorHandler);
+
 
 //  Start server
 const PORT = process.env.PORT || 3000;
