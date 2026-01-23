@@ -1,4 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
+import { FilterQuery } from 'mongoose';
 import Product  from '../models/product.js';
 import { CreateProductDTO, UpdateProductDTO, IProduct } from '../interfaces/product.interface.js';
 
@@ -28,7 +29,7 @@ export const getProducts = async (
   next: NextFunction,
 ): Promise<void> => {
   try {
-    const query: any = {};
+    const query: FilterQuery<IProduct> = {};
 
     // Category filter (case-insensitive)
     if (typeof req.query.category === 'string') {
