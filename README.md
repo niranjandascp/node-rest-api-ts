@@ -22,11 +22,12 @@
 
 ## 🧭 Table of Contents
 
-- [⚙️ Node REST API (TypeScript + Express + MongoDB)](#️-node-rest-api-typescript--express--mongodb)
-  - [🧭 Table of Contents](#-table-of-contents)
-  - [📖 Introduction](#-introduction)
-  - [⚙ Tech Stack](#-tech-stack)
-  - [🔋 Features](#-features)
+- [📖 Introduction](#-introduction)
+- [⚙ Tech Stack](#-tech-stack)
+- [🔋 Features](#-features)
+- [📦 Quick Start](#-quick-start)
+- [🚀 Deployment on Render](#-deployment-on-render)
+- [🧱 API Modules Overview](#-api-modules-overview)
 
 
 ---
@@ -69,3 +70,103 @@ Cleanly structured, type-safe, and production-ready.
 
 ---
 
+## 📦 Quick Start
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/niranjandascp/node-rest-api-ts.git
+cd node-rest-api-ts
+```
+### 2️⃣ Install Dependencies
+```bash
+npm install
+```
+## 3️⃣ Environment Variables (.env)
+
+Create a `.env` file in the root of your project and add the following:
+
+```env
+# Server Port
+PORT=5000
+
+# MongoDB Connection URI
+MONGO_URI=mongodb+srv://<USERNAME>:<PASSWORD>@<CLUSTER>.mongodb.net/
+
+# MongoDB Database Name
+MONGO_DB_NAME=<DATABASE_NAME>
+
+# JWT Secret Key for Authentication
+JWT_SECRET=<YOUR_JWT_SECRET_KEY>
+
+# Node Environment
+NODE_ENV=development
+```
+### 4️⃣ Start the server
+```bash
+npm run dev      # Development mode (with tsx watch)
+npm run build    # Build TypeScript to dist/
+npm start        # Run production build
+```
+
+---
+Server will run on:  
+👉 **http://localhost:5000**
+
+<!-- --- -->
+<!-- ## 🌍 Live Demo
+
+🚀 **Deployed on Render:**  
+[https://node-rest-api-typescript.onrender.com](https://node-rest-api-typescript.onrender.com) -->
+
+---
+
+## 🧱 API Modules Overview
+
+### 🔐 Auth Routes — `/api/auth`
+| Method | Endpoint | Description |
+|--------|-----------|-------------|
+| `POST` | `/register` | Register a new user |
+| `POST` | `/login` | Login and receive JWT token |
+
+---
+
+### 👤 User Routes — `/api/users`
+| Method | Endpoint | Description |
+|--------|-----------|-------------|
+| `GET` | `/` | Get all users |
+| `GET` | `/:id` | Get single user by ID |
+
+---
+
+### 📦 Product Routes — `/api/products`
+| Method | Endpoint | Description |
+|--------|-----------|-------------|
+| `POST` | `/` | Add new product (Admin only) |
+| `GET` | `/` | Get all products (User access) |
+| `PATCH` | `/:id` | Update product (Admin only) |
+| `DELETE` | `/:id` | Delete product (Admin only) |
+
+---
+
+### 🎓 Student Routes — `/api/students`
+| Method | Endpoint | Description |
+|--------|-----------|-------------|
+| `POST` | `/` | Add a new student |
+| `GET` | `/` | Get all students |
+| `GET` | `/:id/marks` | Get specific student’s marks |
+| `PATCH` | `/:id` | Update student details |
+| `DELETE` | `/:id` | Delete student record |
+---
+## 🧑‍💻 Scripts
+
+| Command | Description |
+|----------|--------------|
+| `npm run dev` | Start development server with watch mode |
+| `npm run build` | Compile TypeScript files |
+| `npm start` | Run compiled app (production) |
+| `npm run lint` | Lint all TypeScript files |
+| `npm run lint:fix` | Fix lint errors automatically |
+| `npm run format` | Format code with Prettier |
+
+
+If you like this project, **please ⭐ star the repo!**
