@@ -31,3 +31,12 @@
 
 
 ---
+
+## 📖 Introduction
+
+This project is a **TypeScript-based REST API boilerplate** for scalable backend development.  
+It provides fully functional modules for **Authentication**, **User Management**, **Products**, and **Students**.
+
+Cleanly structured, type-safe, and production-ready.
+
+---
