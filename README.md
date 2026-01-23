@@ -22,12 +22,11 @@
 
 ## 🧭 Table of Contents
 
-- [📖 Introduction](#-introduction)
-- [⚙ Tech Stack](#-tech-stack)
-- [🔋 Features](#-features)
-- [📦 Quick Start](#-quick-start)
-- [🚀 Deployment on Render](#-deployment-on-render)
-- [🧱 API Modules Overview](#-api-modules-overview)
+- [⚙️ Node REST API (TypeScript + Express + MongoDB)](#️-node-rest-api-typescript--express--mongodb)
+  - [🧭 Table of Contents](#-table-of-contents)
+  - [📖 Introduction](#-introduction)
+  - [⚙ Tech Stack](#-tech-stack)
+  - [🔋 Features](#-features)
 
 
 ---
@@ -40,3 +39,33 @@ It provides fully functional modules for **Authentication**, **User Management**
 Cleanly structured, type-safe, and production-ready.
 
 ---
+
+## ⚙ Tech Stack
+
+| Technology | Purpose |
+|-------------|----------|
+| **Node.js** | JavaScript runtime |
+| **TypeScript** | Static typing for maintainable code |
+| **Express.js** | Web framework for building APIs |
+| **MongoDB + Mongoose** | NoSQL database and ODM |
+| **JWT** | Authentication and authorization |
+| **Joi** | Request validation |
+| **dotenv** | Environment configuration |
+| **ESLint + Prettier** | Linting and formatting |
+| **tsx** | TypeScript runtime for development |
+
+---
+
+## 🔋 Features
+
+✅ **JWT-based Authentication**  
+✅ **Role-based Access (Admin / User)**  
+✅ **CRUD APIs for Users, Products, and Students**  
+✅ **Validation using Joi**  
+✅ **Centralized Error Handling**  
+✅ **TypeScript + Mongoose Models**  
+✅ **Environment Configuration via .env**  
+✅ **Clean Folder Structure**
+
+---
+
